@@ -524,20 +524,280 @@ document.write("<table border=3px;>" +
 //Chapter No. 9 - 11
 
 //Task 1 (Solution)
+/*
+var city;
+city = prompt("Enter your city name");
+city = city.toLowerCase();
+if(city==="karachi")
+{
+    alert("Welcome to city of lights");
+};
+*/
 
 //Task 2 (Solution)
+/*
+var gender;
+gender = prompt("Dear User, Please enter your gender");
+gender = gender.toLowerCase();
+if(gender==="male")
+{
+    alert("Good Morning Sir")
+}
+else if(gender==="female")
+{
+    alert("Good Morning Ma'am")
+}
+else
+{
+    alert("Invalid Gender")
+};
+*/
 
 //Task 3 (Solution)
+/*
+var signalColor;
+signalColor = prompt("Enter the Color of the Traffic Signal");
+signalColor = signalColor.toLowerCase();
+
+if(signalColor==="red")
+{
+    alert("RED \nMessage: Must Stop");
+}
+else if(signalColor==="yellow")
+{
+    alert("YELLOW \nMessage: Ready to Move");
+}
+else if(signalColor==="green")
+{
+    alert("GREEN \nMessage: Move Now");
+}
+else
+{
+    signalColor = signalColor.toUpperCase();
+    alert(signalColor + "\nThis is not a Traffic Signal Color");
+}
+*/
 
 //Task 4 (Solution)
+/*
+var fuel;
+fuel = +prompt("How much fuel is left in your Car?");
+if(fuel>0 && fuel<0.25)
+{
+    alert(fuel + " litres \nPlease refill the fuel in your car");
+}
+else if(fuel<=0)
+{
+    alert("Invalid Number");
+}
+*/
 
 //Task 5 (Solution)
+//a
+/*
+var a = 4;
+if (++a === 5)
+{
+    alert("given condition for variable a is true");
+}
+*/
+//Result: It shows the alert message
+
+//b
+/*
+var b = 82;
+if (b++ === 83)
+{
+    alert("given condition for variable b is true");
+}
+*/
+//Result: Id didn't shows the alert message because value of b is still 82
+
+//c
+/*
+var c = 12;
+if (c++ === 13)
+{
+    alert("condition 1 is true");
+}
+if (c === 13)
+{
+    alert("condition 2 is true");
+}
+if (++c < 14)
+{
+    alert("condition 3 is true");
+}
+if(c === 14)
+{
+    alert("condition 4 is true");
+}
+*/
+//Result: It shows the two alert message
+
+//d
+/*
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost)
+{
+    alert("The cost equals");
+}
+*/
+//Result: It shows the alert message
+
+//e
+/*
+if (true)
+{
+    alert("True");
+}
+if (false)
+{
+    alert("False");
+}
+*/
+//Result: It shows the alert message
+
+//f
+/*
+if("car" < "cat")
+{
+    alert("car is smaller than cat");
+}
+*/
+//Result: It shows the alert message
+    
 
 //Task 6 (Solution)
+/*
+var subject1, subject2, subject3, totalMarks, totalObtained, percent, grade, remarks;
+totalMarks = 300;
+
+subject1 = +prompt("Enter your ENGLISH marks \nRemember: Subject Marks = 100");
+subject2 = +prompt("Enter your URDU marks \nRemember: Subject Marks = 100");
+subject3 = +prompt("Enter your MATHEMATICS marks \nRemember: Subject Marks = 100");
+
+document.write("<h1>Marks Sheet</h1></br>");
+document.write("<b>Total Marks: </b>" + totalMarks + "</br>")
+
+if(subject1<0 || subject1>100)
+{
+    alert("Sorry, " + subject1 + " of ENGLISH are not Valid Marks");
+}
+else if(subject2<0 || subject2>100)
+{
+    alert("Sorry, " + subject2 + " of URDU are not Valid Marks");
+}
+else if(subject3<0 || subject3>100)
+{
+    alert("Sorry, " + subject3 + " of MATHEMATICS are not Valid Marks");
+}
+else
+{
+    totalObtained = subject1+subject2+subject3;
+    percent = (totalObtained/totalMarks)*100;
+    percent = percent.toFixed(2);
+
+    document.write("<b>Marks Obtained: </b>" + totalObtained + "</br>")
+    document.write("<b>Percent: </b>" + percent + "%</br>")
+
+    if(percent>=80)
+    {
+        grade="A1";
+        remarks="Excellent";
+        document.write("<b>Grade: </b>" + grade + "</br>");
+        document.write("<b>Remarks: </b>" + remarks + "</br>")
+    }
+    else if(percent>=70 && percent<80)
+    {
+        grade="A";
+        remarks="Good";
+        document.write("<b>Grade: </b>" + grade + "</br>");
+        document.write("<b>Remarks: </b>" + remarks + "</br>")
+    }
+    else if(percent>=60 && percent<70)
+    {
+        grade="B";
+        remarks="You need to improve";
+        document.write("<b>Grade: </b>" + grade + "</br>");
+        document.write("<b>Remarks: </b>" + remarks + "</br>")
+    }
+    else if(percent<60)
+    {
+        grade="Fail";
+        remarks="Sorry";
+        document.write("<b>Grade: </b>" + grade + "</br>");
+        document.write("<b>Remarks: </b>" + remarks + "</br>")
+    }
+    else
+    {
+        alert("Some ERROE Occurred !!");
+    }
+};
+*/
 
 //Task 7 (Solution)
+/*
+var guessNumber, secretNumber, calcultion;
+secretNumber = 6;
+
+document.write("<h1>Guess Game</h1>");
+
+guessNumber = +prompt("There is a Secret Number between 1 - 10 \nGuess that Number");
+
+if(guessNumber===secretNumber)
+{
+    document.write("Bingo! Correct answer");
+}
+else if(guessNumber>secretNumber)
+{
+    calcultion = guessNumber-secretNumber
+    if(calcultion==1)
+    {
+        document.write("Close enough to the correct answer");
+    }
+    else
+    {
+        document.write("Try Again");
+    };
+}
+else if(guessNumber<secretNumber)
+{
+    calcultion = secretNumber-guessNumber
+    if(calcultion==1)
+    {
+        document.write("Close enough to the correct answer");
+    }
+    else
+    {
+        document.write("Try Again");
+    };
+}
+else
+{
+    document.write("Try Again");
+};
+*/
 
 //Task 8 (Solution)
+var value, calc;
+value = +prompt("Dear User, enter any number \nRemember: Number should be Positive");
+calc = value%3;
+
+if(calc===0 && value>=3)
+{
+    alert("The Number " + value + " is Divisible by 3");
+}
+else if(calc!==0 && value>=0)
+{
+    alert("The Number " + value + " is not Divisible by 3");
+}
+else
+{
+    alert("Please enter Positive Number");
+};
 
 //Task 9 (Solution)
 
