@@ -782,6 +782,7 @@ else
 */
 
 //Task 8 (Solution)
+/*
 var value, calc;
 value = +prompt("Dear User, enter any number \nRemember: Number should be Positive");
 calc = value%3;
@@ -798,9 +799,105 @@ else
 {
     alert("Please enter Positive Number");
 };
+*/
 
 //Task 9 (Solution)
+/*
+var number, calc;
+number = +prompt("Dear User, enter any number \nRemember: Number should be Positive");
+calc = number%2;
+
+if(calc===0 && number>0)
+{
+    alert("The Number " + number + " is Even");
+}
+else if(calc!==0 && number>0)
+{
+    alert("The Number " + number + " is Odd");
+}
+else
+{
+    alert("Please enter Positive Number and Greater than Zero");
+};
+*/
 
 //Task 10 (Solution)
+/*
+var temperature, message;
+temperature = +prompt("Dear User, Enter the temperature");
+
+if(temperature>40 && temperature<=55)
+{
+    message="It is too hot outside.";
+    alert("Temperature: " + temperature + "\xB0C \n" + message);
+}
+else if(temperature>30 && temperature<=40)
+{
+    message="The Weather today is Normal.";
+    alert("Temperature: " + temperature + "\xB0C \n" + message);
+}
+else if(temperature>20 && temperature<=30)
+{
+    message="Today's Weather is Cool.";
+    alert("Temperature: " + temperature + "\xB0C \n" + message);
+}
+else if(temperature>10 && temperature<=20)
+{
+    message="OMG! Today's Weather is so Cool.";
+    alert("Temperature: " + temperature + "\xB0C \n" + message);
+}
+else
+{
+    alert("Please enter the Correct Temperature");
+}
+*/
 
 //Task 11 (Solution)
+/*
+var firstNum, secondNum, sign, calc;
+
+firstNum = +prompt("Enter the First Number");
+sign = prompt("What Mathematical Operation do you want? Enter the Sign \n+, -, *, / or %");
+secondNum = +prompt("Enter the Second Number");
+
+document.write("<h1>Calculator</h1>");
+document.write("<b>First Number: </b>" + firstNum + "</br>");
+document.write("<b>Second Number: </b>" + secondNum + "</br>");
+
+if(sign==="+")
+{
+    calc = firstNum + secondNum;
+    document.write("<b>Expression: </b>" + firstNum + " + " + secondNum + "</br>");
+    document.write("<b>Answer: </b>" + calc);
+}
+else if(sign==="-")
+{
+    calc = firstNum - secondNum;
+    document.write("<b>Expression: </b>" + firstNum + " - " + secondNum + "</br>");
+    document.write("<b>Answer: </b>" + calc);
+}
+else if(sign==="*")
+{
+    calc = firstNum * secondNum;
+    document.write("<b>Expression: </b>" + firstNum + " \xD7 " + secondNum + "</br>");
+    document.write("<b>Answer: </b>" + calc);
+}
+else if(sign==="/")
+{
+    calc = firstNum / secondNum;
+    calc = calc.toFixed(2);
+    document.write("<b>Expression: </b>" + firstNum + " \xF7 " + secondNum + "</br>");
+    document.write("<b>Answer: </b>" + calc);
+}
+else if(sign==="%")
+{
+    calc = firstNum % secondNum;
+    calc = calc.toFixed(2);
+    document.write("<b>Expression: </b>" + firstNum + " % " + secondNum + "</br>");
+    document.write("<b>Answer: </b>" + calc);
+}
+else
+{
+    alert("Plese Enter the Correct Sign from the Given List and Try Again. \n+, -, *, / or %");
+};
+*/

@@ -138,3 +138,34 @@ else
     alert("Incorrect Time");
 };
 */
+
+//...................................................................//
+
+//Chapter No. 14 - 16
+
+//Task 1 (Solution)
+//var colors = [];
+
+//Task 2 (Solution)
+//var colors = new Array();
+
+//Task 3 (Solution)
+//var colors = ["Blue", "Black", "Maroon", "White"];
+
+//Task 4 (Solution)
+//var age = new Array(14, 16, 18, 20, 23);
+
+//Task 5 (Solution)
+//var check = [true, false];
+
+//Task 6 (Solution)
+//var myIntro = ["Ammad", "Hassan", 23, "BSSE", 4];
+
+//Task 7 (Solution)
+var qualification = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];
+document.write("<h1>Qualifications</h1>");
+var i;
+for(i=0; i<qualification.length; i++)
+{
+        document.write(") " + qualification[i] + "</br>");   
+}
