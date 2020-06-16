@@ -162,10 +162,66 @@ else
 //var myIntro = ["Ammad", "Hassan", 23, "BSSE", 4];
 
 //Task 7 (Solution)
+/*
 var qualification = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];
 document.write("<h1>Qualifications</h1>");
 var i;
 for(i=0; i<qualification.length; i++)
 {
-        document.write(") " + qualification[i] + "</br>");   
-}
+    document.write((i+1) + ") " + qualification[i] + "</br>");
+};
+*/
+
+//Task 8 (Solution)
+/*
+var studentName = ["Emad", "Awais", "Farhan"];
+var studentMarks = [320, 230, 480];
+var totalMarks = 500;
+var percent;
+percent = (studentMarks[0]/totalMarks)*100;
+document.write("Score of " + studentName[0] + " is " + studentMarks[0] + ". Percenatge: " + percent + "% </br>");
+percent = (studentMarks[1]/totalMarks)*100;
+document.write("Score of " + studentName[1] + " is " + studentMarks[1] + ". Percenatge: " + percent + "% </br>");
+percent = (studentMarks[2]/totalMarks)*100;
+document.write("Score of " + studentName[2] + " is " + studentMarks[2] + ". Percenatge: " + percent + "% </br>");
+*/
+
+//Task 9 (Solution)
+var color;
+var colorNames = ["Red", "Yellow", "Green"];
+document.write("<h1>COLOR Names Game</h1>");
+
+document.write("<b>This is Color Names Array: </b>" + colorNames + "</br></br>");
+
+document.write('<button id="add">'+'Add Color </button> &nbsp &nbsp');
+document.write('<button id="remove">'+'Remove Color </button></br></br>');
+
+var buttonAdd = document.getElementById("add");
+var buttonRemove = document.getElementById("remove");
+
+buttonAdd.addEventListener("click", function()
+{
+    color=prompt("Enter the Color do you want to Add ?");
+    return color;
+});
+colorNames.push(color);
+document.write("<b>The updated Color Names Array is: </b>" + colorNames + "</br>");
+
+buttonRemove.addEventListener("click", function()
+{
+    color=prompt("Enter the Color do you want to Remove ?");
+    colorNames.pop(color);
+    document.write("<b>The updated Color Names Array is: </b>" + colorNames + "</br>");
+});
+
+//Task 10 (Solution)
+
+//Task 11 (Solution)
+
+//Task 12 (Solution)
+
+//Task 13 (Solution)
+
+//Task 14 (Solution)
+
+//Task 15 (Solution)
